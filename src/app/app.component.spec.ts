@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-firebase-sateesh'`, () => {
+  it(`should have as title 'angular-staticapp-sateesh'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-firebase-sateesh');
+    expect(app.title).toEqual('angular-staticapp-sateesh');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-firebase-sateesh app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-staticapp-sateesh app is running!');
   });
 });
